@@ -1,0 +1,41 @@
+Beginner-Level Assignment (Cloud Computing Focus):
+This assignment focuses on basic cloud commands and file handling, which are commonly used when working with Linux in cloud environments.
+
+**File Handling:
+
+Create a directory named cloud_project using mkdir.
+Inside this directory, create 5 text files named file1.txt, file2.txt, etc., using touch.
+Copy file1.txt to a subdirectory named backup using the cp command.
+Use cat to concatenate file2.txt and file3.txt and save the result in combined.txt.
+Compress the backup directory using tar -czf.
+
+
+**Permissions and Environment Variables:
+
+Create a script that prints "Hello Cloud" and save it as greet.sh. Use chmod u+x to make it executable.
+Add a custom environment variable CLOUD_USER with the value "student" using export. Display the variable using printenv.
+Write a command that updates the PATH to include a custom bin directory (create this directory using mkdir ~/bin).
+
+
+**Networking and Cloud Commands:
+
+Use wget to download a file from a given URL.
+Use scp to copy a file from your local machine to a remote server.
+Use ssh to log in to a remote server and list all files in the /home directory.
+Schedule a job using at to create a file at a specified time in the future.
+
+
+**Monitoring and Processes:
+
+Use top to monitor the CPU usage on your cloud instance.
+Display the amount of available RAM using free.
+Use df to check disk usage and ensure that your cloud instance has sufficient space.
+
+
+**Package Management:
+
+Install nginx using apt install (for Ubuntu) or yum install (for RedHat).
+Check the status of the nginx service using systemctl status nginx.
+
+**Advanced Problem:
+Set up a cron job that runs a backup script every day at 2 AM and saves a copy of the /var/www/ directory into a compressed tar file.

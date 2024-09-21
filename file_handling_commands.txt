@@ -1,0 +1,18 @@
+
+1. cat file: Concatenate and display file content.
+2. touch file: Create a new, empty file.
+3. less file: View file content with navigation features.
+   - Use /<word> to search and n to move to the next word.
+   - Shift + g to go to the bottom, 'p' to go back to the top.
+   - /<pattern> vs ?<pattern>: Different search behaviors.
+   - 'q' to quit less.
+4. more file: Display file content directly in the terminal (without less-like navigation).
+5. rm file: Remove a file.
+6. vi file: Open a file in the 'vi' editor (press 'i' to insert, 'esc' and ':wq' to save and exit).
+7. nano file: Open a file in the 'nano' editor. Nano is often preferred over 'vi' due to its simplicity.
+8. mkdir dir_name: Create a new directory.
+9. rmdir dir_name: Remove an empty directory.
+10. cp file dest_path: Copy a file to a destination path.
+11. mv file dest_path: Move (or rename) a file.
+12. head -<number> file: Display the first <number> lines of a file.
+13. tail -<number> file: Display the last <number> lines of a file.

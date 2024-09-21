@@ -1,0 +1,9 @@
+
+1. free: Display the available and used memory.
+2. top: Display the CPU utilization and active processes.
+3. df: Display disk space usage.
+4. du: Estimate file space usage.
+5. lscpu: Display CPU architecture information.
+6. arch: Display the system architecture.
+7. uname -a: Print system information.
+8. cat /etc/os-release: Show the OS version and other details.

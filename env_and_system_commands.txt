@@ -1,0 +1,239 @@
+
+# Environment & System Commands
+
+1. printenv
+   - Description: Display all or part of the environment variables.
+   - Syntax: printenv [variable_name]
+   - Usage Example:
+     - `printenv`
+       - Explanation: Displays all environment variables.
+     - `printenv PATH`
+       - Explanation: Displays the value of the `PATH` environment variable.
+
+2. export
+   - Description: Set environment variables for the current session.
+   - Syntax: export VARIABLE_NAME="value"
+   - Usage Examples:
+     - `export CLOUD_USER="student"`
+       - Explanation: Sets the environment variable `CLOUD_USER` to "student".
+     - `export PATH=$HOME/bin:$PATH`
+       - Explanation: Adds the `bin` directory in the user's home to the `PATH`.
+
+3. source
+   - Description: Execute commands from a file in the current shell.
+   - Syntax: source filename
+   - Usage Example:
+     - `source ~/.bashrc`
+       - Explanation: Reloads the `.bashrc` file to apply any changes to environment variables or aliases.
+
+4. awk
+   - Description: Pattern scanning and processing language, useful for manipulating data files.
+   - Syntax: awk 'script' file
+   - Usage Examples:
+     - `awk -F, '{print $1, $2}' file.csv`
+       - Explanation: Uses comma `,` as the field separator and prints the first and second columns of `file.csv`.
+     - `awk '/error/ {print $0}' log.txt`
+       - Explanation: Prints lines containing the word "error" from `log.txt`.
+
+5. cut
+   - Description: Remove sections from each line of files.
+   - Syntax: cut [options] file
+   - Usage Examples:
+     - `cut -c1-3 file.txt`
+       - Explanation: Extracts and displays characters from position 1 to 3 of each line in `file.txt`.
+     - `cut -d':' -f1 /etc/passwd`
+       - Explanation: Uses `:` as the delimiter and extracts the first field from `/etc/passwd`.
+
+6. uname
+   - Description: Print system information.
+   - Syntax: uname [options]
+   - Usage Examples:
+     - `uname -a`
+       - Explanation: Displays all available system information, including kernel name, version, and hardware details.
+     - `uname -r`
+       - Explanation: Shows the kernel release.
+
+7. lscpu
+   - Description: Display information about the CPU architecture.
+   - Syntax: lscpu
+   - Usage Example:
+     - `lscpu`
+       - Explanation: Provides detailed CPU information such as number of CPUs, threads, cores, sockets, and architecture.
+
+8. arch
+   - Description: Display the machine architecture.
+   - Syntax: arch
+   - Usage Example:
+     - `arch`
+       - Explanation: Outputs the architecture type, e.g., `x86_64`.
+
+9. cat /etc/os-release
+   - Description: Display information about the operating system.
+   - Syntax: cat /etc/os-release
+   - Usage Example:
+     - `cat /etc/os-release`
+       - Explanation: Shows OS name, version, ID, and other relevant details.
+
+10. set (Shell Built-in)
+    - Descripion: Display or set shell options and environment variables.
+    - Syntax: set [options] [variables]
+    - Usage Examples:
+      - `set`
+        - Explanation: Lists all shell variables and functions.
+      - `set -x`
+        - Explanation: Enables debugging by printing each command before execution.
+
+11. unset
+    - Description: Remove variables or functions from the shell environment.
+    - Syntax: unset VARIABLE_NAME
+    - Usage Example:
+      - `unset CLOUD_USER`
+        - Explanation: Removes the `CLOUD_USER` environment variable.
+
+12. env
+    - Description: Display the environment or run a command in a modified environment.
+    - Syntax: env [options] [command]
+    - Usage Examples:
+      - `env`
+        - Explanation: Displays all environment variables.
+      - `env VAR=value command`
+        - Explanation: Runs `command` with `VAR` set to `value`.
+
+13. which
+    - Description: Locate the executable file associated with a command.
+    - Syntax: which command
+    - Usage Example:
+      - `which python`
+        - Explanation: Shows the path to the `python` executable being used.
+
+14. man
+    - Description: Display the manual pages for commands.
+    - Syntax: man command
+    - Usage Example:
+      - `man ls`
+        - Explanation: Opens the manual for the `ls` command.
+
+15. help
+    - Description: Display help information for shell built-in commands.
+    - syntax: help command
+    - Usage Example:
+      - `help cd`
+        - Explanation: Shows help information for the `cd` built-in command.
+
+16. history
+    - Description: Display the history of commands entered in the shell.
+    - Syntax: history
+    - Usage Example:
+      - `history`
+        - Explanation: Lists all previously executed commands in the current session.
+
+17. bc
+    - Description: An arbitrary precision calculator language.
+    - Syntax: bc [options]
+    - Usage Examples:
+      - `echo "5 + 3" | bc`
+        - Explanation: Calculates the sum of 5 and 3, outputting `8`.
+      - `bc -l`
+        - Explanation: Starts `bc` with the math library loaded for floating-point calculations.
+
+18. script
+    - Description: Record a terminal session.
+    - Syntax: script [filename]
+    - Usage Examples:
+      - `script session.log`
+        - Explanation: Starts recording all terminal input and output to `session.log`.
+      - Exit Recording: Press `Ctrl + D` to stop recording.
+
+19. cal
+    - Description: Display a calendar.
+    - Syntax: cal [options] [month] [year]
+    - Usage Examples:
+      - `cal`
+        - Explanation: Displays the current month's calendar.
+      - `cal 2024`
+        - Explanation: Shows the calendar for the entire year 2024.
+
+20. alias
+    - Description: Create shortcuts for commands.
+    - Syntax: alias name="command"
+    - Usage Examples:
+      - `alias ll="ls -la"`
+        - Explanation: Creates an alias `ll` that executes `ls -la`.
+      - `alias -p`
+        - Explanation: Lists all current aliases.
+
+# Practical Examples and Scenarios
+
+1. Setting and Using a Temporary Environment Variable:
+   - Command:
+     ```bash
+     export PROJECT_DIR="/home/alex/project"
+     echo $PROJECT_DIR
+     ```
+   - Explanation: Sets `PROJECT_DIR` to `/home/alex/project` and then prints its value.
+
+2. Adding a Custom Directory to PATH:
+   - Commands:
+     ```bash
+     mkdir ~/bin
+     export PATH=$HOME/bin:$PATH
+     ```
+   - Explanation: Creates a `bin` directory in the home folder and adds it to the `PATH` environment variable, allowing executables in `~/bin` to be run from anywhere.
+
+3. **Using `awk` to Extract Data from a CSV File**:
+   - File (`data.csv`):
+     ```
+     name,age,department
+     Alice,30,HR
+     Bob,25,Engineering
+     Charlie,35,Marketing
+     ```
+   - Command:
+     ```bash
+     awk -F, '{print $1, $3}' data.csv
+     ```
+   - Explanation: Extracts and prints the `name` and `department` columns from `data.csv`.
+
+4. **Reloading Environment Variables After Editing `.bashrc`**:
+   - Commands:
+     ```bash
+     echo 'export EDITOR=nano' >> ~/.bashrc
+     source ~/.bashrc
+     echo $EDITOR
+     ```
+   - *Explanation*: Adds a new environment variable `EDITOR` to `.bashrc`, reloads the file, and then prints the value of `EDITOR`.
+
+5. **Using `cut` to Extract Specific Columns**:
+   - File (`file.txt`):
+     ```
+     John,Doe,28
+     Jane,Smith,34
+     ```
+   - Command:
+     ```bash
+     cut -d',' -f1,2 file.txt
+     ```
+   - Explanation: Extracts the first and second fields (columns) separated by commas from `file.txt`.
+
+# Best Practices
+
+- Use `export` for Environment Variables: Ensure that environment variables needed for your session or scripts are exported so that child processes can access them.
+- Leverage `alias` for Efficiency: Create aliases for frequently used commands to save time and reduce typing errors.
+- Regularly Update Environment Files: For permanent environment variables, add them to `.bashrc` or `.bash_profile` and use `source` to apply changes.
+- Utilize `man` and `help`: When unsure about command usage, refer to manual pages or built-in help to understand options and functionalities.
+-Combine Commands with Pipes: Enhance command capabilities by combining them using pipes (`|`), such as using `awk` with `grep` for advanced data processing.
+
+# Troubleshooting Tips
+
+- Environment Variable Not Set:
+  - Issue: After exporting a variable, it's not available in a new terminal session.
+  - **Solution**: Add the `export` command to `.bashrc` or `.bash_profile` for persistence.
+
+- **Alias Not Working**:
+  - Issue: Aliases disappear after closing the terminal.
+  - **Solution**: Add alias definitions to `.bashrc` or `.bash_profile`.
+
+- **`awk` or `sed` Scripts Not Producing Expected Output**:
+  - **Issue**: Syntax errors or incorrect patterns.
+  - **Solution**: Use `man awk` or `man sed` to review correct syntax and test commands with sample data.
+

@@ -1,0 +1,159 @@
+**Basic Commands (20 Questions and Answers)**:
+
+1. **What does the `pwd` command do?**
+   - Displays the present working directory (current directory).
+
+2. **How can you list all files in a directory using Linux?**
+   - Use the `ls` command to list all files.
+
+3. **Explain the `whoami` command and its usage.**
+   - It shows the current user logged into the system.
+
+4. **How can you display the current date and time in Linux?**
+   - Use the `date` command.
+
+5. **What is the difference between `date +%H` and `date +%h`?**
+   - `date +%H` displays the hour in 24-hour format, while `date +%h` shows the abbreviated month name.
+
+6. **How do you clear the terminal?**
+   - Use the `clear` command or `Ctrl + L` to clear the terminal.
+
+7. **What’s the difference between `ls` and `ls -lh`?**
+   - `ls` lists files, while `ls -lh` shows file sizes in a human-readable format (KB, MB).
+
+8. **How can you show hidden files in Linux?**
+   - Use `ls -a` to show hidden files (files starting with `.`).
+
+9. **What is the difference between `ls -ltr` and `ls -lt`?**
+   - `ls -lt` sorts files by modification time, and `ls -ltr` sorts them in reverse order by time.
+
+10. **What is the significance of using the `/` symbol in Linux paths?**
+    - `/` represents the root directory in Linux.
+
+11. **How can you navigate to the root directory from any location in Linux?**
+    - Use the `cd /` command.
+
+12. **Explain the use of `cd ..` and `cd /path/`.**
+    - `cd ..` moves you one directory up, while `cd /path/` moves you to a specific directory.
+
+13. **What does the `cp` command do, and how do you copy a file to a different directory?**
+    - `cp` copies files or directories. Example: `cp file.txt /path/to/directory/`.
+
+14. **How can you rename a file using the `mv` command?**
+    - Use `mv old_filename new_filename`.
+
+15. **How do you display the first 10 lines of a file using Linux?**
+    - Use the `head file.txt` command.
+
+16. **What is the difference between `head` and `tail` commands?**
+    - `head` displays the first 10 lines of a file, while `tail` shows the last 10 lines.
+
+17. **Explain how the `touch` command works.**
+    - `touch` creates an empty file or updates the timestamp of an existing file.
+
+18. **What does `cat` do when used with a file?**
+    - `cat` displays the content of a file.
+
+19. **What is the purpose of the `rm` command, and how can you use it to remove directories recursively?**
+    - `rm` removes files, and `rm -rf` deletes directories and their contents recursively.
+
+20. **Explain the concept of using wildcards in Linux commands (e.g., `ls *x`).**
+    - Wildcards (`*`) allow pattern matching, where `*x` lists files ending with "x."
+
+---
+
+### **File Handling (20 Questions and Answers)**:
+
+1. **How do you concatenate and display the content of multiple files in Linux?**
+   - Use `cat file1 file2` to concatenate and display the content.
+
+2. **What is the difference between `more` and `less` when viewing file content?**
+   - `more` displays content directly, while `less` allows navigation (scrolling, search).
+
+3. **How do you search for a specific word in a file using `grep`?**
+   - Use `grep "word" file.txt` to search for a word in the file.
+
+4. **What is the benefit of using `egrep` over `grep`?**
+   - `egrep` supports extended regular expressions, allowing more complex pattern matching.
+
+5. **How can you create multiple files with a single command?**
+   - Use `touch file{1..10}.txt` to create multiple files in one go.
+
+6. **Explain the difference between `cp` and `mv` commands.**
+   - `cp` copies files or directories, while `mv` moves or renames them.
+
+7. **How can you compare two files and find the differences?**
+   - Use the `diff` command to compare files line by line.
+
+8. **Explain the command to compress and decompress a file using `gzip`.**
+   - To compress: `gzip file.txt`, and to decompress: `gunzip file.txt.gz`.
+
+9. **How do you extract a tar archive in Linux?**
+   - Use `tar -xzf archive.tar.gz` to extract the archive.
+
+10. **Explain how you can sort the content of a file and find unique values using `sort` and `uniq`.**
+    - Use `sort file.txt | uniq` to sort the file and remove duplicates.
+
+11. **What is the purpose of `split` in Linux?**
+    - `split` divides a large file into smaller parts.
+
+12. **How can you display the total number of lines, words, and characters in a file using a single command?**
+    - Use `wc file.txt` to show lines, words, and characters.
+
+13. **How do you remove duplicate lines in a sorted file?**
+    - Use `sort file.txt | uniq` to remove duplicates.
+
+14. **What does the `find` command do, and how can you use it to locate a file in the current directory?**
+    - `find ./ -name "file.txt"` finds files in the current directory and subdirectories.
+
+15. **How do you append the output of a command to an existing file using the `>>` operator?**
+    - `command >> file.txt` appends output to the file.
+
+16. **What are the differences between `diff` and `cmp` when comparing files?**
+    - `diff` shows line-by-line differences, while `cmp` shows a binary comparison (yes/no).
+
+17. **How do you handle large log files efficiently using `tail -f`?**
+    - Use `tail -f file.log` to continuously monitor a growing log file.
+
+18. **What does the `sed` command do in Linux?**
+    - `sed` performs text transformations, like search and replace.
+
+19. **How do you use `tr` to translate characters in a file?**
+    - `tr 'a' 'b' < file.txt` replaces all instances of "a" with "b".
+
+20. **Explain the use of `awk` in manipulating CSV files.**
+    - `awk -F, '{print $1,$2}' file.csv` extracts and prints specific columns from a CSV file.
+
+---
+
+### **Networking and Cloud-Related Commands (20 Questions and Answers)**:
+
+1. **How can you download a file from the internet using `wget`?**
+   - Use `wget http://example.com/file.zip`.
+
+2. **What is the purpose of `curl`, and how can you make an API call with it?**
+   - `curl` is used to transfer data via URLs, e.g., `curl http://api.example.com`.
+
+3. **Explain how you can connect to a remote server using `ssh`.**
+   - Use `ssh user@hostname` to securely connect to a remote server.
+
+4. **How do you securely copy files between a local machine and a remote server using `scp`?**
+   - Use `scp file.txt user@hostname:/path/to/directory`.
+
+5. **What is the function of the `ping` command?**
+   - `ping` tests network connectivity to a server by sending ICMP packets.
+
+6. **How can you trace the route taken by packets to a destination using `traceroute`?**
+   - Use `traceroute example.com` to display the route to a destination.
+
+7. **What is the difference between `wget` and `curl`?**
+   - `wget` is used for downloading files, while `curl` supports both downloading and API interactions.
+
+8. **How can you display your network configuration using `ifconfig`?**
+   - Use `ifconfig` to display the network interface configurations.
+
+9. **How can you check if a port is open on a remote server using `telnet`?**
+   - Use `telnet IP PORT` to check if a port is open.
+
+10. **What is the use of `netstat` in Linux?**
+    - `netstat` shows active network connections and listening ports.

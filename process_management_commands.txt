@@ -1,0 +1,7 @@
+
+1. pgrep service: Get the process ID (PID) of a running service.
+2. kill -9 PID: Kill a process with a specific PID.
+3. pkill service: Kill a service by name.
+4. jobs: List all background jobs.
+5. bg: Resume a job in the background.
+6. sleep s: Pause the script for 's' seconds.

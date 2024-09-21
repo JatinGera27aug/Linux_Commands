@@ -1,0 +1,8 @@
+
+1. gzip -k file: Compress a file.
+2. gunzip file: Decompress a file.
+3. tar -czf <myfiles.tar.gz> folder/: Create a compressed archive.
+4. tar -xzf <myfiles.tar.gz>: Extract a compressed archive.
+5. zip myfiles.zip file1 file2: Compress specific files into a zip archive.
+6. unzip myfiles.zip: Extract files from a zip archive.
+7. unzip -l myfiles.zip: List the contents of a zip archive.

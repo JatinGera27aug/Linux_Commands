@@ -1,0 +1,7 @@
+
+1. at date: Schedule a command to run at a specific time.
+   Example: at 12:30 PM, then enter the commands to be executed.
+
+   echo "ghhj"> demo.txt
+   this file will be automaticall created at specified time
+2. cron: Schedule recurring jobs (not explicitly mentioned, but implied).

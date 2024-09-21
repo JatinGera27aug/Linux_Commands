@@ -1,0 +1,8 @@
+
+1. grep "word" file: Search for a word in a file.
+   - Why is it better than 'less'? 'grep' directly searches without navigating through the file manually.
+2. egrep "word1|word2" file: Search for multiple words in a file.
+3. ls x*: List files starting with a certain pattern.
+4. ls *x: List files ending with a certain pattern.
+5. find ./ -name file: Find a file inside the current folder and subfolders.
+6. locate file: Locate a file (requires updatedb command to update the database first).

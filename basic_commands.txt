@@ -1,0 +1,11 @@
+
+1. pwd: Print the current working directory.
+2. ls: List directory contents.
+3. whoami: Displays the current user logged in.
+   Usage: (user@hostname folder)
+4. date: Display the current date and time.
+5. date +%D: Show the date in MM/DD/YY format.
+6. date +%T: Show the time in HH:MM:SS format.
+7. date +%H: Show the hour in 24-hour format.
+8. date +%h: Show the abbreviated month name.
+9. clear / ctrl + l: Clear the terminal.

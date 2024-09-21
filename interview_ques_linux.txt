@@ -1,0 +1,71 @@
+Interview Questions:
+1) Basic Commands (20 Questions):
+2) What does the pwd command do?
+3) How can you list all files in a directory using Linux?
+4) Explain the whoami command and its usage.
+5) How can you display the current date and time in Linux?
+6) What is the difference between date +%H and date +%h?
+7) How do you clear the terminal?
+8) What’s the difference between ls and ls -lh?
+9) How can you show hidden files in Linux?
+10) What is the difference between ls -ltr and ls -lt?
+11) What is the significance of using the / symbol in Linux paths?
+12) How can you navigate to the root directory from any location in Linux?
+13) Explain the use of cd .. and cd /path/.
+14) What does the cp command do, and how do you copy a file to a different directory?
+15) How can you rename a file using the mv command?
+16) How do you display the first 10 lines of a file using Linux?
+17) What is the difference between head and tail commands?
+18) Explain how the touch command works.
+19) What does cat do when used with a file?
+20) What is the purpose of the rm command, and how can you use it to remove directories recursively?
+21) Explain the concept of using wildcards in Linux commands (e.g., ls *x).
+
+
+
+
+File Handling (20 Questions):
+1) How do you concatenate and display the content of multiple files in Linux?
+2) What is the difference between more and less when viewing file content?
+3) How do you search for a specific word in a file using grep?
+4) What is the benefit of using egrep over grep?
+5) How can you create multiple files with a single command?
+6) Explain the difference between cp and mv commands.
+7) How can you compare two files and find the differences?
+8) Explain the command to compress and decompress a file using gzip.
+9) How do you extract a tar archive in Linux?
+10) Explain how you can sort the content of a file and find unique values using sort and uniq.
+11) What is the purpose of split in Linux?
+12) How can you display the total number of lines, words, and characters in a file using a single command?
+13) How do you remove duplicate lines in a sorted file?
+14) What does the find command do, and how can you use it to locate a file in the current directory?
+15) How do you append the output of a command to an existing file using the >> operator?
+16) What are the differences between diff and cmp when comparing files?
+17) How do you handle large log files efficiently using tail -f?
+18) What does the sed command do in Linux?
+19) How do you use tr to translate characters in a file?
+20) Explain the use of awk in manipulating CSV files.
+
+
+
+Networking and Cloud-Related Commands (20 Questions):
+1) How can you download a file from the internet using wget?
+2) What is the purpose of curl, and how can you make an API call with it?
+3) Explain how you can connect to a remote server using ssh.
+4) How do you securely copy files between a local machine and a remote server using scp?
+5) What is the function of the ping command?
+6) How can you trace the route taken by packets to a destination using traceroute?
+7) What is the difference between wget and curl?
+8) How can you display your network configuration using ifconfig?
+9 )How can you check if a port is open on a remote server using telnet?
+10) What is the use of netstat in Linux?
+11) How can you set up a cron job to run a network-related task periodically?
+12) How do you check for active network connections in Linux?
+13) What command can be used to send data between two networked Linux machines?
+14) How do you update a package repository in Ubuntu?
+15) Explain how systemctl is used to manage services in Linux.
+16) What is the purpose of rpm and yum in RedHat-based distributions?
+17) How can you schedule tasks to run at a specific time using at?
+18) What does ufw do in Linux, and how can you allow a specific port through the firewall?
+19) How do you install a package using apt in Ubuntu?
+20) How can you display the status of a service in Linux?
